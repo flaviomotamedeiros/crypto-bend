@@ -3,7 +3,7 @@ require('dotenv').config()
 
 const connectionURL = process.env.MONGODB_URL
 mongoose.connect(connectionURL, {
-    useNewUrlParser: true
+  useNewUrlParser: true
 })
 
 const dbConnection = mongoose.connection;
